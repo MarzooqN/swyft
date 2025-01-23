@@ -42,5 +42,20 @@ export const fetchRevenueByLocation = async () => {
   return response.data;
 };
 
+export const getNfcReaders = async (id) => {
+  const response = await apiClient.get(`/nfc_readers`);
+  return response.data;
+};
+
+export const updateNfcReader = async (id, data) => {
+  const response = await apiClient.put(`/nfc_readers/${id}`, data);
+  return response.data;
+};
+
+export const deleteNfcReader = async (id) => {
+  const response = await apiClient.delete(`/nfc_readers/${id}`);
+  return response.data;
+};
+
 
 // Other API methods...

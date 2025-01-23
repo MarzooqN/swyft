@@ -20,6 +20,9 @@ const Navbar = () => (
       <Button color="primary" component={Link} to="/analytics">
         Analytics
       </Button>
+      <Button color="primary" component={Link} to="/manage-readers">
+        Readers
+      </Button>
     </Toolbar>
   </AppBar>
 );

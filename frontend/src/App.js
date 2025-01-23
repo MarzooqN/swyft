@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import TransactionsPage from './pages/TransactionsPage';
 import AnalyticsPage from './pages/AnalyticsPage';
 import DashboardPage from './pages/DashboardPage';
+import ManageReadersPage from './pages/ManageReadersPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/transactions" element={<TransactionsPage />} />
+        <Route path="/manage-readers" element={<ManageReadersPage />} />
         <Route path="/analytics" element={<AnalyticsPage />} />
         <Route path="/" element={<DashboardPage />} />
       </Routes>
